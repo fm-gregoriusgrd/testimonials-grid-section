@@ -14,6 +14,7 @@
     --spacing: 0.25rem;
     --container-sm: 24rem;
     --container-3xl: 48rem;
+    --container-6xl: 72rem;
     --container-7xl: 80rem;
     --text-xs: 0.75rem;
     --text-xs--line-height: calc(1 / 0.75);
@@ -271,6 +272,9 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-\[url\(\'\.\/images\/bg-pattern-quotation\.svg\'\)\] {
+    background-image: url('./images/bg-pattern-quotation.svg');
+  }
   .bg-\[url\(\'\/images\/bg-pattern-quotation\.svg\'\)\] {
     background-image: url('/images/bg-pattern-quotation.svg');
   }
@@ -385,11 +389,6 @@
       grid-template-rows: repeat(4, minmax(0, 1fr));
     }
   }
-  .md\:bg-\[url\(\'\.\/images\/bg-pattern-quotation\.svg\'\)\] {
-    @media (width >= 48rem) {
-      background-image: url('./images/bg-pattern-quotation.svg');
-    }
-  }
   .md\:px-14 {
     @media (width >= 48rem) {
       padding-inline: calc(var(--spacing) * 14);
@@ -445,9 +444,9 @@
       grid-row-start: 2;
     }
   }
-  .lg\:max-w-7xl {
+  .lg\:max-w-6xl {
     @media (width >= 64rem) {
-      max-width: var(--container-7xl);
+      max-width: var(--container-6xl);
     }
   }
   .lg\:grid-cols-4 {
